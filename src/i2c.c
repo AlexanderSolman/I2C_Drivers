@@ -53,7 +53,7 @@ void I2C_write(uint8_t s_addr, uint8_t *data, uint32_t data_length){
       Byte tranfer to finish and data register 
       to be empty*/
     for(uint32_t i = 0; i < data_length; i++){
-        I2C1->DR = data[i];
+        I2C->DR = data[i];
         while (!(I2C->SR1 & I2C_SR1_TXE));
         while (!(I2C->SR1 & I2C_SR1_BTF));
     }

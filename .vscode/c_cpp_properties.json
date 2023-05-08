@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/lib",
-                "${workspaceFolder}/**/lib"
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/lib"
             ],
             "defines": [
                 "_DEBUG",
